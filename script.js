@@ -80,5 +80,8 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', function () {
-  scores = [0, 0];
+  diceEl.classList.add('hidden');
+  currentScore = 0;
+  document.getElementById(`current--0`).textContent = 0;
+  document.getElementById(`current--1`).textContent = 0;
 });
